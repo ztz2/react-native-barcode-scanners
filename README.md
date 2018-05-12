@@ -68,12 +68,15 @@ import {
   Alert,
 } from 'react-native';
 
-import BarcodeScanner from 'react-native-barcode-scanner'
+import BarcodeScanner from 'react-native-barcode-scanners'
 
 export default class App extends Component {
+
+  constructor(props){
+    super(props)
+  }
   onBarCodeRead(res){
-    let barcode = res.data
-    Alert.alert('HINT', barcode)
+    Alert.alert('HINT', res.data)
   }
   onReadBarCodeByGalleryFailure(){
     Alert.alert('HINT', 'Not found barcode!')
