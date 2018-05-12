@@ -1,5 +1,5 @@
 
-# React Native Barcode Scanner <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
+# React Native Barcode Scanners <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 
 A barcode scanner component created based on [react-native-camera](https://github.com/react-native-community/react-native-camera) and [react-native-image-picker](https://github.com/react-community/react-native-image-picker), Supported Android and IOS
 
@@ -8,7 +8,7 @@ This component has been created for a simple use of barcode scanner with some cu
 
 Demo1 | Demo2
 ----- | ----
-<img title="Demo1" src="https://s1.ax1x.com/2018/05/12/CBzkg1.jpg"> | <img title="Demo2" src="https://s1.ax1x.com/2018/05/12/CBzF3R.jpg">
+<img title="Demo1" src="https://s1.ax1x.com/2018/05/13/CDAqd1.jpg"> | <img title="Demo2" src="https://s1.ax1x.com/2018/05/13/CDAbZR.jpg">
 
 ## Get Started
 
@@ -18,11 +18,12 @@ Demo1 | Demo2
 
 ### Install
 
-`npm install react-native-image-picker@latest --save`
+`npm install react-native-barcode-scanners --save`
 
 #### Android Installation
 
 `react-native link`
+`react-native link react-native-camera`
 
 IMPORTANT NOTE: In the use of react-native-camrea gradle upgrade caused Android package error, reference [here](https://github.com/react-native-community/react-native-camera/issues/1490)
 
