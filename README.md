@@ -107,7 +107,7 @@ Function to be called when native code emit onScanCode, when barcode is detected
 ```javascript
 onBarCodeRead(res){
     let barcode = res.data
-    Alert.alert('HINT', barcode)
+    Alert.alert('Note', barcode)
 }
 ```
 #### onBarCodeReadByGalleryStart
@@ -121,7 +121,7 @@ onBarCodeReadByGalleryStart(res){
 Function to be called when Failed to recognize the barcode of the album image (Cause: The picture no't barcode or system error)
 ```javascript
 onReadBarCodeByGalleryFailure(res){
-    Alert.alert('HINT', 'Not found barcode!') 
+    Alert.alert('Note', 'Not found barcode!') 
 }
 ```
 ### Options props
