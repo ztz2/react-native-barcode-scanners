@@ -12,10 +12,10 @@ export default class App extends Component {
     super(props)
   }
   onBarCodeRead(res){
-    Alert.alert('HINT', res.data)
+    Alert.alert('Note', res.data)
   }
   onReadBarCodeByGalleryFailure(){
-    Alert.alert('HINT', 'Not found barcode!')
+    Alert.alert('Note', 'Not found barcode!')
   }
   componentDidMount () {}
   render() {

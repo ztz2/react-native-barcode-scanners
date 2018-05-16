@@ -43,7 +43,7 @@ IMPORTANT NOTE: In the use of react-native-camrea gradle upgrade caused Android 
     <key>NSPhotoLibraryAddUsageDescription</key>
     <string>$(PRODUCT_NAME) would like to save photos to your photo gallery</string>
 ```
-More about the configuration of react-native-camera [here](https://github.com/react-native-community/react-native-camera)
+More about the configuration of react-native-camera [click me](https://github.com/react-native-community/react-native-camera)
 
 ##### step3. react-native-image-picker
 1.In the XCode's "Project navigator", right click on your project's Libraries folder ➜ Add Files to <...>
@@ -58,7 +58,7 @@ More about the configuration of react-native-camera [here](https://github.com/re
     <key>NSPhotoLibraryAddUsageDescription</key>
     <string>$(PRODUCT_NAME) would like to save photos to your photo gallery</string>
 ```
-More about the configuration of react-native-image-picker [here](https://github.com/react-community/react-native-image-picker)
+More about the configuration of react-native-image-picker [click me](https://github.com/react-community/react-native-image-picker)
 
 ### Usage example
 ```javascript
@@ -76,10 +76,10 @@ export default class App extends Component {
     super(props)
   }
   onBarCodeRead(res){
-    Alert.alert('HINT', res.data)
+    Alert.alert('Note', res.data)
   }
   onReadBarCodeByGalleryFailure(){
-    Alert.alert('HINT', 'Not found barcode!')
+    Alert.alert('Note', 'Not found barcode!')
   }
   componentDidMount () {}
   render() {
@@ -121,7 +121,7 @@ onBarCodeReadByGalleryStart(res){
 Function to be called when Failed to recognize the barcode of the album image (Cause: The picture no't barcode or system error)
 ```javascript
 onReadBarCodeByGalleryFailure(res){
-    Alert.alert('HINT', 'Not found barcode!')
+    Alert.alert('HINT', 'Not found barcode!') 
 }
 ```
 ### Options props
@@ -136,7 +136,7 @@ isEnableDiscernPicture | bool    | Yes      | true                           | W
 Title                  | string  | Yes      | 'Title'                        | TopBar title
 hintScanText           | string  | Yes      | 'Put the barcode into the box' | Scan position hint text
 hintOrText             | string  | Yes      | 'OR'                           | More operating hint text
-hintPictureGalleryText | string  | Yes      | 'Choose photo gallery'         | Hint text for select barcode from photo album 
+hintPictureGalleryText | string  | Yes      | 'Choose barcode from album'    | Hint text for select barcode from photo album 
 hintOpenLightText      | string  | Yes      | 'ON'                           | Hint text for open light
 hintCloseLightText     | string  | Yes      | 'OFF'                          | Hint text for close light
 RenderTopBar           | element | Yes      |                                | Top bar custom react component
@@ -151,4 +151,4 @@ scanAngleHeight        | number  | Yes      | 5                              | T
 lightBackgroundColor   | string  | Yes      | '#181D20'                      | The flashlight block background color
 
 ## License
-[React Native Barcode Scanner is MIT licensed.](https://opensource.org/licenses/MIT)
+[React Native Barcode Scanners is MIT licensed.](https://opensource.org/licenses/MIT)
